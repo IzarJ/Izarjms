@@ -1,0 +1,247 @@
+:root{
+	--prime-color:  #31ABB5;
+}
+.body{
+	margin: 0 ;
+	padding: 0;
+	background-color: white;
+	width: 100%;
+
+}
+.navbar{
+	background-color: whitesmoke;
+	padding-bottom: 0;
+	display: flex;
+	position: fixed;
+	margin-bottom: 0;
+	width: 1360px;
+}
+
+.navbar .container{
+	padding-top: 2em;
+	width: 100%;
+	height: 110px;
+	place-content: space-between;
+	display: flex;
+	place-content: space-between;
+	padding-right: 15em;
+}
+.container .menu-menu{
+	
+	cursor: pointer;
+	padding-top: 0;
+	padding-left: 1em;
+	border-radius: 50%;
+	width: 50px;
+	margin: 0;
+}
+
+.navbar .bolb {
+		padding-top: 0;
+		padding-left: 1em;
+		border-radius: 50%;
+		width: 110px;
+		margin: 0;
+}
+.navbar .logo {	
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+	font-size: 1.5em;
+  	position: absolute;
+  	padding-top: 1.2em;
+ 	top: 8px;
+  	left: 16px;
+
+}
+.navbar span{
+	font-size: 3em;
+	color: var(--prime-color);
+	font-family: "Times New Roman", Times, serif;;
+}
+.navbar nav{
+	display: none;
+	}
+nav.menu-btn{
+  	display: block;
+ } 
+.navbar nav{
+
+	position: fixed;
+    z-index: 999;
+    width: 30%;
+    right: 0;
+    top: 0;
+    background: #20272E;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 0;
+
+}
+
+.navbar ul.ulnav{
+	margin-top: 5em;
+	padding-top: 3.7em;
+
+}
+.navbar ul.linav{
+	margin-top: 5em;
+	padding-top: 3em;
+
+}
+ul.ulnav {
+   list-style-type: none; 
+   margin: 0;
+   padding: 0;
+}
+ul.linav {
+   list-style-type: none; 
+   margin: 0;
+   padding: 0;
+}
+
+a {
+    color: #444444;
+}
+.navbar ul a{
+	color: white;
+	text-decoration: none;
+	display: block;
+	padding: .5em;
+	font-size: 1.5em;
+	text-align: right;
+
+}
+
+.navbar .menu-exit {
+    float: left;
+    margin: .5em;
+    cursor: pointer;
+}
+
+
+.sec{
+	float: left;
+	margin: 0;
+	padding-left: 0;
+	display: flex;
+
+}
+.sec .container{
+	margin: 0;
+	padding-left: 0;
+	display: flex;
+
+}
+.sec img{
+	width: 1365px;
+	height: 500px;
+}
+.sec .phar{
+	position: absolute;
+	margin: 1em;
+	top: 4em;
+	font-family: "Times New Roman", Times, serif;;
+	font-size: 40px;
+}
+
+.phar span{
+	font-size: 35px;
+}
+.phar .pos{
+	font-size: 50px;
+	font-family: "Times New Roman", Times, serif;
+
+
+}
+
+.tips .container{
+	margin: 0;
+	padding-left: 2em;
+	display: flex;
+	padding-top: 2em;
+
+}
+.tips .tip1 {
+	padding-left: .2;
+	list-style-type: binary;
+	font-size: 30px; 
+}
+.tips .tip2 {
+	padding-left: .2em;
+	list-style-type: binary;
+	font-size: 30px; 
+}
+.tips .tip3 {
+	padding-left: .2em;
+	list-style-type: binary;
+	font-size: 30px; 
+}
+.tips .tp{
+	padding-top: 1em;
+	padding-left: 1em;
+}
+.tip .pfortp{
+	font-size: 20px;
+	padding-top: .5em;
+	padding-left: 0;
+
+}
+.tips {
+	background-color: whitesmoke;
+	padding-top: 2em;
+	width: 100%;
+	height: 110px;
+}
+@media only screen and (min-width: 760px) {
+
+    .menu-menu{
+        display: none;
+    }
+	.menu-exit{
+        display: none;
+    }
+
+    .container nav{
+    	display: flex;
+      	justify-content: space-between;
+      	background: none;
+      	position: unset;
+      	height: auto;
+      	width: 100%;
+        padding: 0;
+        padding-left: 5em;
+      
+
+	}
+
+
+	.container nav ul{
+			display: flex;
+	}
+	.container ul a{
+		color: black;
+      	font-size: 1em;
+      	padding: .1em 1em;
+	}
+	.navbar ul.ulnav {
+      margin: 0;
+    }
+    .navbar ul.linav {
+      margin: 0;
+    }
+    li.current a{
+    	font-weight: bold;
+    }
+
+  	 li.second a {
+  		 color: var(--primme-color);
+            border: 3px solid var(--prime-color);
+            font-weight: bold;
+            border-radius: 5em;
+            margin-top: -.2em;
+            float: right;   
+    }
+
+ }
